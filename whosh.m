@@ -28,8 +28,6 @@ suffix = cell(size(bytes));
 
 bytestr = cellfun(@(a,b) sprintf('%d%s', a, b), num2cell(floor(bytes)), suffix, 'uni', 0);
 
-
-
 % Size string
 
 sizestr = arrayfun(@(X) sprintf('%dx', X.size), S, 'uni', 0);
